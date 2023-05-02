@@ -25,7 +25,7 @@ const server = http.createServer((req,res) =>{
     }
     else if(req.url === "/styles.css"){
         fs.readFile(path.join(__dirname, 'public', 'styles.css'), (err, content) =>{
-            if(err) throw err;
+            if(err) res.end("Error: File not found");
             else{
                 res.writeHead(200,{'content-type' : 'text/css'});
                 res.end(content);
@@ -34,7 +34,7 @@ const server = http.createServer((req,res) =>{
     }
     else if(req.url === "/script.js"){
         fs.readFile(path.join(__dirname, 'public', 'script.js'), (err, content) =>{
-            if(err) throw err;
+            if(err) res.end("Error: File not found");
             else{
                 res.writeHead(200, {'content-type' : 'text/javascript'});
                 res.end(content);
@@ -43,7 +43,7 @@ const server = http.createServer((req,res) =>{
     }
     else if(req.url === "/image_girl.png"){
         fs.readFile(path.join(__dirname, 'public', 'image_girl.png'), (err, content) =>{
-            if(err) throw err;
+            if(err) res.end("Error: File not found");
             else{
                 res.writeHead(200, {'content-type': 'image/png'});
                 res.end(content);

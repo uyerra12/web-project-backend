@@ -10,8 +10,9 @@ header > nav > div > ul{
 }
 header > nav > div > ul > li {
     display: inline-block;
-    padding: 0 8px 0 8px;
+    padding: 0 15px 0 15px;
     font-size: large;  
+    font-weight: 500;
 }
 header > nav > div > ul > li:hover{
     transform: scale(1.1);
@@ -19,7 +20,7 @@ header > nav > div > ul > li:hover{
 }
 
 header{
-    background-color: #70cef6;
+    background-color: #a9dcf1;
     border-bottom:solid 0.5px black;
     padding: 2px;   
     margin-top:-5px;
@@ -47,6 +48,10 @@ body{
     "header"
     "main"
     "footer";
+    /*background-color: #f0ffff;*/
+    background-image: url('https://marketplace.canva.com/EAD2962NKnQ/2/0/1600w/canva-rainbow-gradient-pink-and-purple-virtual-background-_Tcjok-d9b4.jpg');
+    background-size: cover;
+    background-attachment: fixed;
 }
 main{
     margin-top: 3em;
@@ -82,7 +87,11 @@ main{
 #about-me > ul{
     padding-right: 100px;
     font-size: large;
-    font-family:'Courier New', Courier, monospace
+   font-family: 'Courier New', Courier, monospace;
+    color:black;
+    font-weight: 600;
+    font-size: larger;
+    
 
 }
 #about-me > ul >li{
@@ -106,6 +115,8 @@ i{
     grid-area: skills; 
     padding-right: 20px; 
     padding-left: 20px;
+    background-color: #ece9f9;
+    font-family: Inter,-apple-system,BlinkMacSystemFont,Roboto,Droid Sans,Helvetica,Arial,sans-serif;
 }
 
 .languages > ul{
@@ -118,7 +129,7 @@ i{
     display: inline-block;
     padding: 5px 10px 5px 10px;
     margin: 3px;
-    background-color: rgb(187, 217, 244);
+    background-color: #d3abc4;
 }
 .tools-frameworks > ul{
     list-style-type: none;
@@ -130,7 +141,7 @@ i{
     display: inline-block;
     padding: 5px 10px 5px 10px;
     margin: 3px;
-    background-color: rgb(187, 217, 244);
+    background-color: #eda8a8;
 }
 .databases-OS > ul{
     list-style-type: none;
@@ -142,7 +153,7 @@ i{
     display: inline-block;
     padding: 5px 10px 5px 10px;
     margin: 3px;
-    background-color: rgb(187, 217, 244);
+    background-color: #e69db9;
 }
 #projects{
     margin-top: 50px;
@@ -151,10 +162,13 @@ i{
     grid-area: projects;
     padding-left: 20px;
     padding-right: 20px;
+    background-color: #e7e3f6;
+    font-family: Inter,-apple-system,BlinkMacSystemFont,Roboto,Droid Sans,Helvetica,Arial,sans-serif;
 }
 #projects > div {
     padding-right: 10px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Inter,-apple-system,BlinkMacSystemFont,Roboto,Droid Sans,Helvetica,Arial,sans-serif;
+    font-size: 1rem;
 }
 #experience{
     margin-top: 50px;
@@ -163,10 +177,13 @@ i{
     grid-area: experience;
     padding-left: 20px;
     padding-right: 20px;
+    background-color: #dfe3f3;
+    font-family: Inter,-apple-system,BlinkMacSystemFont,Roboto,Droid Sans,Helvetica,Arial,sans-serif;
+    
 }
 #experience > div {
     
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Inter,-apple-system,BlinkMacSystemFont,Roboto,Droid Sans,Helvetica,Arial,sans-serif;
 }
 #education{
     margin-top: 50px;
@@ -175,10 +192,12 @@ i{
     grid-area: education;
     padding-left: 20px;
     padding-right: 20px;
+    background-color: rgb(220, 218, 244);
+    font-family: Inter,-apple-system,BlinkMacSystemFont,Roboto,Droid Sans,Helvetica,Arial,sans-serif;
 }
 #education > div {
-    
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Inter,-apple-system,BlinkMacSystemFont,Roboto,Droid Sans,Helvetica,Arial,sans-serif;
+    font-size: 1rem;
 }
 #blogs{
     margin-top: 50px;
@@ -191,7 +210,7 @@ i{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 footer{
-    background-color: black;
+    background-color: #a9dcf1;
     padding: 10px;
     grid-area: footer;
 }
@@ -201,7 +220,8 @@ footer > ul {
 }
 footer > ul > li > a{
     text-decoration: none;
-    color: rgb(197, 190, 190);
+    color: black;
+    font-weight: 600;
 }
 footer > ul > li{
     text-align: center;
